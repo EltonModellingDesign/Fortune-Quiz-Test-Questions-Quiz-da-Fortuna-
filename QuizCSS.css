@@ -1,0 +1,163 @@
+*{margin: 0;padding: 0;box-sizing: content-box;}
+
+
+body {
+    
+    display: grid;
+    grid-template-rows: 320px auto 300px;
+    grid-template-areas: 
+    'cabeçalho'
+    'conteudo'
+    'rodape';
+    background-color: black;
+    background-image: url(./Content/Money\ texture.jpg);
+    background-clip: content-box;
+    
+
+}
+
+header {
+    grid-area: cabeçalho;
+    display: flex; 
+    justify-content: center;
+    margin-top: 30px;}
+    
+header img {height: 250px;}
+
+@media (max-width: 1400px ) {
+    body{grid-template-rows: 200px auto 300px;}
+    header img{height: 150px;margin: 0 10px;}
+}
+
+
+
+main {
+    grid-area: conteudo;
+    display: flex; 
+    justify-content: center;
+    background-color: #FFC533;
+    border-radius: 300px;
+    z-index: 3;
+    margin: 0 15%;
+    
+    
+}
+.start h3{
+    margin-top: 60px;
+    color: #2B400D;
+    font-family: 'Sifonn Pro';
+    font-size: 1.5rem;
+}
+.start span{
+    float: left;
+    margin-top: 20px;
+    font-family: 'Futura Bk BT';
+    font-size: 1.3rem;
+    color: #2B400D;
+    margin-bottom: 60px;
+}
+
+
+
+
+.question h3{
+    margin-top: 30px;
+    color: #B23F24;
+    font-family: 'Sifonn Pro';
+    font-size: 1.5rem;
+    margin: 30px 180px 20px 180px;
+}
+.question ul{
+    margin: 20px 20% 10px 20%;
+    font-family: 'Futura Bk BT';
+    font-size: 1.3rem;
+    color: #2B400D;
+    text-decoration: none;
+}
+.question li{list-style: none;display: flex;align-items: center;align-content: center;margin: 30px 0;}
+
+.option{
+    padding: 5px;
+
+    background-color: #FFC533;
+    border: solid 5px #FFEC00;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor:pointer;
+}
+
+    .optionS{
+        padding: 5px;
+    
+        background-color: #B23F24;
+        border: solid 5px #FFEC00;
+        border-radius: 50%;
+        margin-right: 10px;}
+.escolha{
+    float: right;
+    margin: 0px 30% 5px 0;
+    font-family: 'Futura Bk BT';
+    font-size: 1.1rem;
+    color: #2B400D;
+}
+
+
+
+.result h3{
+    margin-top: 30px;
+    color: #12B2B0;
+    font-family: 'Sifonn Pro';
+    font-size: 1.5rem;
+    white-space: nowrap;
+}
+.result div{
+    margin-top: 20px;
+    font-family: 'Futura Bk BT';
+    font-size: 1.3rem;
+    color: #2B400D;
+}
+.porcent{font-size: 2rem;}
+
+.share{
+    float: right;
+    margin-top: 20px;
+    font-family: 'Futura Bk BT';
+    font-size: 1.1rem;
+    text-decoration: underline;
+    color: #2B400D;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 1400px ) {
+    main {border-radius: 0;margin: 0;padding: 5px 20px;}
+    .option{padding: 15px;}
+    .question h3{margin: 30px 0 20px 0;}
+    .question ul{margin: 0;}
+
+}
+
+
+footer {grid-area: rodape; display: flex; justify-content: center;margin-top: 30px;}
+
+.buttonGo{
+    background-color: #68860D;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #FFEC00;
+    font-family: 'Sifonn Pro';
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.buttonNext{
+    background-color: #B23F24;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #FFEC00;
+    font-family: 'Sifonn Pro';
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
