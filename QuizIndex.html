@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="port">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz da Fortuna</title>
+    <link rel="stylesheet" href="QuizCSS.css" type="text/css">
+</head>
+<body>
+    <header id="header">
+        <img src="./Content/Quiz Logo.svg" title="logo">
+    </header>
+    <main>
+        <section>
+            <div class="start" id="start">
+                <h3>Descubra agora se você ficara rico !!!</h3>
+                <span>Responda algumas perguntas e vamos te dizer quais seram as chances de você chegar lá.</span>
+            </div>
+            <div class="question" id="questions">
+                <h3>O que você faria se tivesse 30 mil reais?</h3>
+                <ul id="optionList">
+                    <li id="option"><span class="option"></span>Colocaria na poupança.</li>
+                    <li id="option"><span class="option"></span>Usaria para viajar ou realizaria outros sonhos.</li>
+                    <li id="option"><span class="option"></span>Abriria ou investiria no meu proprio negocio.</li>
+                    <li id="option"><span class="option"></span>Usaria para fazer faculdade.</li>
+                    <li id="option"><span class="option"></span>Ajudaria alguma pessoa.</li>
+                </ul>
+                <span class="escolha">(Escolha apenas uma resposta)</span>
+            </div> 
+            <div class="result" id="results">
+                <h3>Parabens !!!</h3>
+                <div>
+                    <span>Você tem uma estimativa de </span>
+                    <span class="porcent" id="score">85%</span>
+                    <span>para ficar rico</span>
+                </div>
+                <span class="share">compartilha agora</span>
+            </div>
+        </section>             
+    </main>
+    <footer>
+        <div>
+            <button class="buttonGo" id="buttonGo">Vamos começar</button>
+            <button class= 'buttonNext' id="Next">Proximo</button>
+        </div>
+    </footer>
+
+<script src="./QuizJavaScript.js"></script>
+    
+</body>
+</html>
